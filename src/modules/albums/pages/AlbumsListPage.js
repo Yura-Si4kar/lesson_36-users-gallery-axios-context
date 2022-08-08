@@ -1,6 +1,6 @@
 import AlbumsList from '../components/AlbumsList';
 import React from 'react';
-import useAlbumsList from '../useAlbumsList';
+import useAlbumsList from '../hooks/useAlbumsList';
 
 function AlbumsListPage() {
     const { list } = useAlbumsList();

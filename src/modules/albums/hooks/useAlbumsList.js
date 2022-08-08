@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { getAlbumsList } from './services/albumsService';
-import useUser from '../users/hooks/useUser';
+import { getAlbumsList } from '../services/albumsService';
+import useUser from '../../users/hooks/useUser';
 
 export default function useAlbumsList() {
     const [list, setList] = useState([]);

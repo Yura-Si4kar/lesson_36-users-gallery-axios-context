@@ -5,9 +5,7 @@ import ReactDOM from 'react-dom/client';
 
 const root = ReactDOM.createRoot(document.querySelector('.container'));
 root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <AppRoutes />
-        </BrowserRouter>
-    </React.StrictMode>,
+    <BrowserRouter>
+        <AppRoutes />
+    </BrowserRouter>
 );
