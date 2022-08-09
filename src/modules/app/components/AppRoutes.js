@@ -9,6 +9,7 @@ import UserDetailsWrapper from '../../users/pages/UserDetailsWrapper';
 import UsersListPage from '../../users/pages/UsersListPage';
 import UsersModule from '../../users/pages/UsersModule';
 
+
 function AppRoutes() {
     return (
         <Routes>
@@ -20,10 +21,8 @@ function AppRoutes() {
                         <Route index element={<Navigate to="albums" />} />
                         <Route path="albums" element={<AlbumsModule />}>
                             <Route index element={<AlbumsListPage />}></Route>
-                            <Route
-                                path=":albumId"
-                                element={<AlbumDetailsWrapper />}
-                            ></Route>
+                            <Route path=":albumId" element={<AlbumDetailsWrapper />}>
+                            </Route>
                         </Route>
                     </Route>
                 </Route>
