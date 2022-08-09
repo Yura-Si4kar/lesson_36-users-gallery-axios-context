@@ -9,9 +9,8 @@ export default function AlbumDetailPage() {
   return (
     <div>
       <h4>Photos:</h4>
-      <br/>
-      <PhotoList album={album} />
-      <Outlet/>
+        <PhotoList album={album} />
+        <Outlet/>
     </div>
   )
 }

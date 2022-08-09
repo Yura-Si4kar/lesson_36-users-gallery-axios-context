@@ -2,3 +2,8 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.photo-item {
+    margin: 5px;
+    cursor: pointer;
+}
