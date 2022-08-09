@@ -4,7 +4,7 @@ import PhotosListItem from '../../photo/PhotosListItem';
 import useAlbum from '../hooks/useAlbum';
 
 export default function AlbumDetailPage() {
-  const {album} = useAlbum();
+  const album = useAlbum();
 
   return (
     <div>
