@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import PhotosListItem from '../../photo/PhotosListItem';
+import PhotoList from '../../photo/PhotoList';
 import useAlbum from '../hooks/useAlbum';
 
 export default function AlbumDetailPage() {
@@ -10,11 +10,7 @@ export default function AlbumDetailPage() {
     <div>
       <h4>Photos:</h4>
       <br/>
-      {album.map((photo) => (
-        <PhotosListItem
-        key={photo.id}
-        item={photo} />
-      ))}
+      <PhotoList album={album} />
       <Outlet/>
     </div>
   )

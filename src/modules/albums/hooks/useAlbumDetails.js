@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { getAlbumDetails } from '../services/albumsService';
 
 export default function useAlbumDetails(id) {
-    const [album, setAlbum] = useState({});
+    const [album, setAlbum] = useState([]);
 
     const fetchAlbum = useCallback(
         () => getAlbumDetails(id).then(setAlbum),
